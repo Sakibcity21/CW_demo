@@ -82,42 +82,47 @@ export const Footer = () => {
               </nav>
             </div>
 
-            {/* Code Wizards Socials */}
-            <div className="flex flex-col gap-4 footer-col">
-              <h4 className="font-semibold text-base uppercase tracking-wider text-white">Code Wizards</h4>
-              <nav className="flex flex-col gap-3 text-gray-400">
-                <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Instagram className="h-4 w-4 text-pink-500 flex-shrink-0" />
-                  Instagram
-                </a>
-                <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Linkedin className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  LinkedIn
-                </a>
-                <a href={`mailto:${site.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                  Email
-                </a>
-              </nav>
-            </div>
+            {/* Social columns — always side by side */}
+            <div className="col-span-2 grid grid-cols-2 gap-8 footer-col">
 
-            {/* Algozenith ATU Socials */}
-            <div className="flex flex-col gap-4 footer-col">
-              <h4 className="font-semibold text-base uppercase tracking-wider text-white">Algozenith ATU</h4>
-              <nav className="flex flex-col gap-3 text-gray-400">
-                <a href={algozenith.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Instagram className="h-4 w-4 text-pink-500 flex-shrink-0" />
-                  Instagram
-                </a>
-                <a href={algozenith.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Linkedin className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  LinkedIn
-                </a>
-                <a href={`mailto:${algozenith.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                  Email
-                </a>
-              </nav>
+              {/* Code Wizards Socials */}
+              <div className="flex flex-col gap-4">
+                <h4 className="font-semibold text-base uppercase tracking-wider text-white">Code Wizards</h4>
+                <nav className="flex flex-col gap-3 text-gray-400">
+                  <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Instagram className="h-4 w-4 text-pink-500 flex-shrink-0" />
+                    Instagram
+                  </a>
+                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Linkedin className="h-4 w-4 text-blue-400 flex-shrink-0" />
+                    LinkedIn
+                  </a>
+                  <a href={`mailto:${site.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Mail className="h-4 w-4 text-primary flex-shrink-0" />
+                    Email
+                  </a>
+                </nav>
+              </div>
+
+              {/* Algozenith ATU Socials */}
+              <div className="flex flex-col gap-4">
+                <h4 className="font-semibold text-base uppercase tracking-wider text-white">Algozenith ATU</h4>
+                <nav className="flex flex-col gap-3 text-gray-400">
+                  <a href={algozenith.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Instagram className="h-4 w-4 text-pink-500 flex-shrink-0" />
+                    Instagram
+                  </a>
+                  <a href={algozenith.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Linkedin className="h-4 w-4 text-blue-400 flex-shrink-0" />
+                    LinkedIn
+                  </a>
+                  <a href={`mailto:${algozenith.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Mail className="h-4 w-4 text-primary flex-shrink-0" />
+                    Email
+                  </a>
+                </nav>
+              </div>
+
             </div>
 
           </div>
