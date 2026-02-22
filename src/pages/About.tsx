@@ -133,9 +133,9 @@ const About = () => {
 
         {/* Mission & Vision */}
         <section className="mission-section max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
             {/* Mission */}
-            <div className="mission-card space-y-6">
+            <div className="mission-card space-y-3">
               <h2 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Our Mission</h2>
               <Card className="glass-card border-none h-full">
                 <CardContent className="p-8 space-y-4 text-lg text-muted-foreground leading-relaxed font-light">
@@ -160,7 +160,7 @@ const About = () => {
             </div>
 
             {/* Vision */}
-            <div className="vision-card space-y-6">
+            <div className="vision-card space-y-3">
               <h2 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary">Our Vision</h2>
               <Card className="glass-card border-none h-full">
                 <CardContent className="p-8 space-y-4 text-lg text-muted-foreground leading-relaxed font-light">

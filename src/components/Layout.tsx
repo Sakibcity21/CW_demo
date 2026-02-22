@@ -9,6 +9,9 @@ export const Layout = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+
     // Highlight existing + newly added occurrences on the client.
     const observer = highlightBrand({ observe: true, root: document.body });
     // Re-run when route changes (client navigation)

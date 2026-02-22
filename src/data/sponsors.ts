@@ -10,7 +10,7 @@ export const sponsors: Sponsor[] = [
     name: "Algozenith",
     description: "Competitive programming platform sponsorship for coding contests and practice sessions.",
     logo: "/algozenith.png",
-    url: "#",
+    url: "https://www.instagram.com/algozenith_atu_/",
   },
   {
     name: "Gemini Student progrmam",

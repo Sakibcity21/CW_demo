@@ -84,9 +84,9 @@ export const Hero = () => {
                 <div className="block">Empowering Coders of Tomorrow</div>
               </h3>
 
-              <p ref={textRef} className="mt-4 sm:mt-6 text-sm sm:text-lg text-muted-foreground max-w-2xl">
+              {/* <p ref={textRef} className="mt-4 sm:mt-6 text-sm sm:text-lg text-muted-foreground max-w-2xl">
                 A student-driven club fostering innovation, learning, and collaboration through code. Join us to learn, build, and grow together.
-              </p>
+              </p> */}
 
               <div ref={ctaRef} className="mt-6 sm:mt-8 hero-cta-row flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link to="/registration" className="btn-animated-border inline-flex justify-center items-center gap-2 sm:gap-3 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-base sm:text-lg font-semibold text-primary-foreground shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50" aria-label="Register for event">

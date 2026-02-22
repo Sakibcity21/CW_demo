@@ -31,8 +31,8 @@ export const partners: Partner[] = [
         name: "Algozenith",
         type: "Core Team",
         logo: "/algozenith.png",
-        description: "Master competitive programming and DSA with Algozenith.",
-        website: "#",
+        description: "Master competitive programming and DSA with Algozenith ATU.",
+        website: "https://www.instagram.com/algozenith_atu_/",
         ambassadors: [
             {
                 name: "Shivam Giri",
