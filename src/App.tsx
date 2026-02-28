@@ -11,6 +11,7 @@ import Activities from "./pages/Activities";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import Registration from "./pages/Registration";
+import StudentFest from "./pages/StudentFest";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/registration" element={<Registration />} />
             </Route>
+            {/* Student Fest 2026 — standalone page with its own navbar/footer */}
+            <Route path="/student-fest-2026" element={<StudentFest />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

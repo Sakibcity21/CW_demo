@@ -103,18 +103,37 @@ export const EventCard = ({ event, layout = "horizontal" }: EventCardProps) => {
           </div>
 
           <div className={cn(
-            "mt-6 pt-4 border-t border-border/50 flex items-center justify-between gap-4",
+            "mt-6 pt-4 border-t border-border/50 flex flex-wrap items-center gap-4",
             !isHorizontal && "mt-auto"
           )}>
-            {event.registrationOpen ? (
-              <Button asChild className="w-full sm:w-auto btn-animated-border group" aria-label={`Register for ${event.title}`}>
-                <Link to={`/registration?event=${event.slug}`} className="gap-2">
-                  Register Now
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+            {event.link && (
+              <Button asChild variant="outline" className="w-full sm:w-auto" aria-label={`View details for ${event.title}`}>
+                <Link to={event.link}>
+                  View Details
                 </Link>
               </Button>
+            )}
+            {event.registrationOpen ? (
+              <Button asChild className="w-full sm:w-auto btn-animated-border group ml-auto" aria-label={`Register for ${event.title}`}>
+                {event.registrationLink ? (
+                  <a href={event.registrationLink} target="_blank" rel="noopener noreferrer" className="gap-2">
+                    Register Now
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                ) : event.link ? (
+                  <Link to={event.link} className="gap-2">
+                    Register Now
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </Link>
+                ) : (
+                  <Link to={`/registration?event=${event.slug}`} className="gap-2">
+                    Register Now
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </Link>
+                )}
+              </Button>
             ) : (
-              <div className="text-sm font-medium text-muted-foreground italic ml-auto">
+              <div className="text-sm font-medium text-muted-foreground italic ml-auto w-full sm:w-auto text-right">
                 {event.status === "past" ? "Event Completed" : "Registration Closed"}
               </div>
             )}
