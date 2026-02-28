@@ -82,9 +82,9 @@ function SFNavbar() {
 
                 <div className={`sf-navbar__links ${mobileOpen ? "sf-navbar__links--open" : ""}`}>
                     {[
+                        ["ABOUT", "sf-about"],
                         ["AGENDA", "sf-schedule"],
                         ["SPEAKERS", "sf-speakers"],
-                        ["ABOUT", "sf-about"],
                         // ["REGISTER", "sf-register"],
                     ].map(([label, id]) => (
                         <button key={id} className="sf-navbar__link" onClick={() => scrollTo(id)}>
