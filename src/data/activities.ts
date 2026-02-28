@@ -9,7 +9,7 @@ export const activities: Event[] = [
         summary: "Hands-on dev sprint — build, break, learn, and ship features.",
         location: "Workshop Room",
         registrationOpen: true,
-        status: "ongoing"
+        status: "past"
     },
     {
         slug: "dsa-sprint",
