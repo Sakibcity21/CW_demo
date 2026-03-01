@@ -1,44 +1,64 @@
-# Code Wizards — Local development
+# Code Wizards Official Website
 
-This repository has been prepared for local development. All remote/GitHub-specific instructions and CI references have been removed so you can use this as a normal local project folder.
+Welcome to the repository for the official website of **Code Wizards**, a student-driven coding club at D. Y. Patil Agricultural & Technical University. This website serves as a central hub for our club's activities, team members, announcements, and events, including **Student Fest 2026** and our partnership with **Algozenith ATU**.
 
-## Quick start (local)
+## 🚀 Features
 
-1. Install Node.js (recommended via nvm): https://github.com/nvm-sh/nvm
-2. Install dependencies:
+- **About Us**: Information about the club, its mission, and its values.
+- **Events & Activities**: Details on upcoming and past events (including Student Fest 2026).
+- **Core Team**: Meet the members and mentors who drive the club forward.
+- **Responsive Design**: Fully responsive layout optimized for all devices, enhanced with smooth scroll and beautiful animations.
 
-```sh
-npm install
-```
+## 🛠️ Built With
 
-3. Start dev server:
+This project is built using modern web development technologies to ensure high performance and an exceptional developer experience:
 
-```sh
+- **[React](https://react.dev/)** - UI library
+- **[Vite](https://vitejs.dev/)** - Build tool and development server
+- **[TypeScript](https://www.typescriptlang.org/)** - Static typing
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[shadcn/ui](https://ui.shadcn.com/)** - Reusable UI components
+- **[GSAP](https://gsap.com/) & [Framer Motion](https://www.framer.com/motion/)** - Animations
+
+## 💻 Running Locally
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+You need to have **Node.js** installed (version 18 or higher is recommended).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sakibcity21/CW_demo.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd "CW website/website_1"
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Starting the Development Server
+
+Start the Vite development server:
+```bash
 npm run dev
 ```
+The terminal will display the local URL you can visit to view the website (usually `http://localhost:5173` or `http://localhost:8080`).
 
-4. Open http://localhost:5173 (or the port shown in the terminal).
+## 🤝 Contact Us
 
-## Technologies
-
-- Vite
-- React + TypeScript
-- Tailwind CSS
-- shadcn-ui
+- **Email**: [codewizards.atu@gmail.com](mailto:codewizards.atu@gmail.com)
+- **Instagram**: [@codewizards.atu](https://www.instagram.com/codewizards.atu/)
+- **LinkedIn**: [Code Wizards](https://www.linkedin.com/in/code-wizards-596a59397/)
 
 ---
 
-To re-enable Git/GitHub later, run `git init` and add your remote.
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b1614f8b-8630-4505-bb50-8ff045915d0d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain) -->
+*Empowering Coders of Tomorrow*
