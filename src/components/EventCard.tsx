@@ -132,11 +132,11 @@ export const EventCard = ({ event, layout = "horizontal" }: EventCardProps) => {
                   </Link>
                 )}
               </Button>
-            ) : (
+            ) : event.status === "past" ? (
               <div className="text-sm font-medium text-muted-foreground italic ml-auto w-full sm:w-auto text-right">
-                {event.status === "past" ? "Event Completed" : "Registration Closed"}
+                Event Completed
               </div>
-            )}
+            ) : null}
           </div>
         </div>
       </Card>
