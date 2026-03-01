@@ -56,7 +56,7 @@ export const EventCard = ({ event, layout = "horizontal" }: EventCardProps) => {
       )}>
         <div className={cn(
           "relative overflow-hidden bg-muted",
-          isHorizontal ? "w-full sm:w-2/5 md:w-1/3 aspect-video sm:aspect-auto" : "w-full aspect-[4/5]"
+          isHorizontal ? "w-full sm:w-2/5 md:w-1/3 aspect-[4/5] sm:aspect-auto" : "w-full aspect-[4/5]"
         )}>
           <img
             src={event.image}
