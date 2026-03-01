@@ -302,7 +302,10 @@
 
 @media (max-width: 768px) {
     .sf-navbar {
-        background: #0a0a0f;
+        background: rgba(10, 10, 15, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--sf-border);
         padding: 12px 0;
     }
 
@@ -394,12 +397,13 @@
 .sf-hero__main-inner {
     max-width: var(--sf-container);
     margin: 0 auto;
-    padding: 0;
+    padding: 0 24px;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 128px;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 /* Giant title — like FTX26 massive "FTX26" text */
@@ -410,7 +414,7 @@
 
 .sf-hero__giant-line {
     display: block;
-    font-size: clamp(64px, 12vw, 160px);
+    font-size: clamp(40px, 12vw, 160px);
     font-weight: 700;
     letter-spacing: -0.04em;
     color: var(--sf-text-primary);
