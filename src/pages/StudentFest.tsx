@@ -324,18 +324,18 @@ function WhyAttendSection() {
 function ScheduleSection() {
     const revealRef = useReveal();
     const schedule = [
-        { time: "09:00 – 09:20", title: "Registration & Arrival", tag: "arrival" },
-        { time: "09:20 – 09:50", title: "Inauguration & Welcome Address", tag: "ceremony" },
-        { time: "09:50 – 10:30", title: "Session 1", desc: "Topic & Speaker: To be announced", tag: "session" },
-        { time: "10:35 – 10:50", title: "Tea / Coffee Break", tag: "break" },
-        { time: "10:55 – 11:35", title: "Session 2", desc: "To be announced", tag: "session" },
-        { time: "11:40 – 12:20", title: "Session 3", desc: "To be announced", tag: "session" },
-        { time: "12:20 – 01:00", title: "Lunch Break", tag: "break" },
-        { time: "01:00 – 01:40", title: "Session 4", desc: "To be announced", tag: "session" },
-        { time: "01:45 – 02:25", title: "Panel Discussion & Student Q&A", tag: "panel" },
-        { time: "02:25 – 02:45", title: "Prize Distribution", tag: "ceremony" },
-        { time: "02:45 – 03:00", title: "Vote of Thanks", tag: "ceremony" },
-        { time: "03:00 – 03:45", title: "Networking & Departure", tag: "networking" },
+        { time: "09:00 – 09:20", title: "Registration & Arrival", desc: "Registration & Arrival of Students and Guests", tag: "arrival" },
+        { time: "09:20 – 09:50", title: "Inauguration & Welcome Address", desc: "University Authorities & Organizing Team", tag: "ceremony" },
+        { time: "09:50 – 10:30", title: "Session 1 – Industry Expectations from Developers in the AI Era", tag: "session" },
+        { time: "10:30 – 10:40", title: "Tea Break", tag: "break" },
+        { time: "10:45 – 11:25", title: "Session 2 – Cyber Security Foundation", tag: "session" },
+        { time: "11:30 – 11:35", title: "Transition Break", tag: "break" },
+        { time: "11:40 – 12:20", title: "Session 3 – Cloud Computing", tag: "session" },
+        { time: "12:20 – 12:50", title: "Refreshment / Lunch Break", tag: "break" },
+        { time: "01:00 – 01:40", title: "Session 4 – Generative AI", tag: "session" },
+        { time: "01:40 – 01:45", title: "Transition Break", tag: "break" },
+        { time: "01:45 – 03:30", title: "Panel Discussion & Student Q&A", tag: "panel" },
+        { time: "03:30 – 03:45", title: "Vote of Thanks & Closing Remarks", tag: "ceremony" },
     ];
 
     const tagColors: Record<string, string> = {
