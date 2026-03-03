@@ -91,8 +91,8 @@ function SFNavbar() {
                             {label}
                         </button>
                     ))}
-                    <button className="sf-hero__bar-cta sf-navbar__cta" onClick={() => scrollTo("sf-register")}>
-                        STARTING SOON
+                    <button className="sf-hero__bar-cta sf-navbar__cta" onClick={() => window.open("https://konfhub.com/student-fest-2026", "_blank")}>
+                        REGISTER NOW
                     </button>
                 </div>
 
@@ -144,9 +144,9 @@ function HeroSection() {
                         <h2 className="sf-hero__bar-title">A TECHNICAL SESSION & NETWORKING EVENT</h2>
                         <button
                             className="sf-hero__bar-cta"
-                            onClick={() => document.getElementById("sf-register")?.scrollIntoView({ behavior: "smooth" })}
+                            onClick={() => window.open("https://konfhub.com/student-fest-2026", "_blank")}
                         >
-                            STARTING SOON
+                            REGISTER NOW
                         </button>
                     </div>
                     <p className="sf-hero__bar-desc">
@@ -433,12 +433,12 @@ function RegistrationSection() {
             <div className="sf-container">
                 <div className="sf-register__wrapper sf-reveal-item">
                     <div className="sf-register__info">
-                        <span className="sf-section-tag">Get Your Spot</span>
+                        <span className="sf-section-tag">Registration Open</span>
                         <h2 className="sf-section-title">
                             Register for Student Fest 2026
                         </h2>
                         <p className="sf-register__desc">
-                            Open to university students. Limited seats available. Secure your spot for a day of learning, networking, and collaboration.
+                            Registration is now open! Currently open for <strong>Code Wizards club members</strong> (early access closes 4th March, 3:00 PM). Open to all university students. Limited seats — secure your spot now!
                         </p>
                         <ul className="sf-register__features">
                             <li>
@@ -472,12 +472,13 @@ function RegistrationSection() {
                                 <span className="sf-register__card-amount">0</span>
                             </div>
                             <p className="sf-register__card-subtitle">No cost. Just bring your curiosity.</p>
-                            {/* <button className="sf-btn sf-btn--primary sf-btn--lg sf-btn--full" onClick={() => window.open("#", "_blank")}>
+                            <button className="sf-btn sf-btn--primary sf-btn--lg sf-btn--full" onClick={() => window.open("https://konfhub.com/student-fest-2026", "_blank")}>
                                 Register Now
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg> */}
-                            <button className="sf-btn sf-btn--primary sf-btn--lg sf-btn--full" disabled style={{ cursor: "not-allowed", opacity: 0.7 }}>
-                                Registration Starting Soon
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                             </button>
+                            <p className="sf-register__card-note" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", marginTop: "0.75rem", textAlign: "center" }}>
+                                🔒 Club member early access closes 4th March, 3:00 PM
+                            </p>
                             <p className="sf-register__card-org">
                                 Organized by <strong>Code Wizards Coding Club</strong>
                             </p>
