@@ -291,8 +291,8 @@ function WhyAttendSection() {
         },
         {
             icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>,
-            title: "Tea, Coffee & Lunch",
-            desc: "Complimentary refreshments and lunch provided throughout the event."
+            title: "Tea, Coffee & Refreshment",
+            desc: "Complimentary refreshments provided throughout the event."
         },
     ];
 
@@ -331,7 +331,7 @@ function ScheduleSection() {
         { time: "10:45 – 11:25", title: "Session 2 – Cyber Security Foundation", tag: "session" },
         { time: "11:30 – 11:35", title: "Transition Break", tag: "break" },
         { time: "11:40 – 12:20", title: "Session 3 – Cloud Computing", tag: "session" },
-        { time: "12:20 – 12:50", title: "Refreshment / Lunch Break", tag: "break" },
+        { time: "12:20 – 12:50", title: "Refreshment Break", tag: "break" },
         { time: "01:00 – 01:40", title: "Session 4 – Generative AI", tag: "session" },
         { time: "01:40 – 01:45", title: "Transition Break", tag: "break" },
         { time: "01:45 – 03:30", title: "Panel Discussion & Student Q&A", tag: "panel" },
@@ -459,7 +459,7 @@ function RegistrationSection() {
                             </li>
                             <li>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06d6a0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                                Tea, coffee &amp; lunch included
+                                Tea, coffee &amp; refreshment included
                             </li>
                         </ul>
                     </div>
