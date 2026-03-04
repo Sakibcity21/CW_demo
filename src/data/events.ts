@@ -19,10 +19,9 @@ export const upcoming: Event[] = [
     image: "/student-fest-2026.png",
     summary: "A TECHNICAL SESSION & NETWORKING EVENT organized by Code Wizards coding club at D. Y. Patil Agricultural & Technical University.",
     location: "University Conference Hall (On-Campus)",
-    registrationOpen: true,
+    registrationOpen: false,
     status: "upcoming",
-    link: "/student-fest-2026",
-    registrationLink: "https://konfhub.com/student-fest-2026"
+    link: "/student-fest-2026"
   },
 ];
 
