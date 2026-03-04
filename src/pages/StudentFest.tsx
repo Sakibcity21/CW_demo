@@ -473,11 +473,19 @@ function RegistrationSection() {
                             </div>
                             <p className="sf-register__card-subtitle">No cost. Just bring your curiosity.</p>
                             <button className="sf-btn sf-btn--primary sf-btn--lg sf-btn--full" disabled style={{ cursor: "not-allowed", opacity: 0.7 }}>
-                                Registration Closed
+                                Coming Soon
                             </button>
                             <p className="sf-register__card-org">
                                 Organized by <strong>Code Wizards Coding Club</strong>
                             </p>
+                            <div style={{ marginTop: "1.25rem", paddingTop: "1rem", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+                                <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Contact</p>
+                                <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem", fontSize: "0.85rem", color: "rgba(255,255,255,0.6)" }}>
+                                    <span>📞 Omkar (Lead) – <a href="tel:8767404875" style={{ color: "rgba(255,255,255,0.8)" }}>8767404875</a></span>
+                                    <span>📞 Shivam (Algozenith Lead) – <a href="tel:9334733191" style={{ color: "rgba(255,255,255,0.8)" }}>9334733191</a></span>
+                                    <span>📞 Anish (GSA) – <a href="tel:7397867560" style={{ color: "rgba(255,255,255,0.8)" }}>7397867560</a></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
