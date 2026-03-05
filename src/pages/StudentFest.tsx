@@ -326,16 +326,13 @@ function ScheduleSection() {
     const schedule = [
         { time: "09:00 – 09:20", title: "Registration & Arrival", desc: "Registration & Arrival of Students and Guests", tag: "arrival" },
         { time: "09:20 – 09:50", title: "Inauguration & Welcome Address", desc: "University Authorities & Organizing Team", tag: "ceremony" },
-        { time: "09:50 – 10:30", title: "Session 1 – Industry Expectations from Developers in the AI Era", tag: "session" },
-        { time: "10:30 – 10:40", title: "Tea Break", tag: "break" },
-        { time: "10:45 – 11:25", title: "Session 2 – Cyber Security Foundation", tag: "session" },
-        { time: "11:30 – 11:35", title: "Transition Break", tag: "break" },
-        { time: "11:40 – 12:20", title: "Session 3 – Cloud Computing", tag: "session" },
-        { time: "12:20 – 12:50", title: "Refreshment Break", tag: "break" },
-        { time: "01:00 – 01:40", title: "Session 4 – Generative AI", tag: "session" },
-        { time: "01:40 – 01:45", title: "Transition Break", tag: "break" },
-        { time: "01:45 – 03:30", title: "Panel Discussion & Student Q&A", tag: "panel" },
-        { time: "03:30 – 03:45", title: "Vote of Thanks & Closing Remarks", tag: "ceremony" },
+        { time: "09:50 – 10:50", title: "Session 1: From Frontend to Backend", desc: "Building Scalable AI-Powered Web Applications in the World of AI — Speaker: Rishi Gandhi, Full Stack Developer, Pinnacle Technology, Pune", tag: "session" },
+        { time: "11:00 – 12:00", title: "Session 2: Getting Started with Generative AI & AI Engineering", desc: "Tools, Workflows and Real-World Use Cases — Speaker: Ved Mone, AI Consultant & Educator, Pune", tag: "session" },
+        { time: "12:00 – 12:05", title: "Transition Break", tag: "break" },
+        { time: "12:05 – 01:05", title: "Session 3: Cybersecurity in the AI Era", desc: "Foundations, Threats and Protection Strategies — Speaker: Sunil J. Botalwar, Cyber Security Expert, Pune", tag: "session" },
+        { time: "01:05 – 02:00", title: "Refreshment Break", tag: "break" },
+        { time: "02:00 – 03:15", title: "Panel Discussion: Ethical AI & Responsible Innovation", desc: "Building Trustworthy AI for the Future — Panelists: Ishan Deshpande (Mindtickle, Pune), Nagesh Pai (WordPress Developer, Mumbai), Prathmesh Palave (CampusPress, Mumbai)", tag: "panel" },
+        { time: "03:15 – 03:25", title: "Vote of Thanks & Closing Remarks", tag: "ceremony" },
     ];
 
     const tagColors: Record<string, string> = {
@@ -388,11 +385,14 @@ function ScheduleSection() {
 /* ───────────────── Speakers Section ───────────────── */
 function SpeakersSection() {
     const revealRef = useReveal();
-    const speakers = Array.from({ length: 6 }, (_, i) => ({
-        id: i,
-        name: "To be announced",
-        role: i % 2 === 0 ? "Industry Expert" : "Academic Expert",
-    }));
+    const speakers = [
+        { id: 0, name: "Rishi Gandhi", role: "Full Stack Developer, Pinnacle Technology, Pune", type: "speaker" as const },
+        { id: 1, name: "Ved Mone", role: "AI Consultant & Educator, Pune", type: "speaker" as const },
+        { id: 2, name: "Sunil J. Botalwar", role: "Cyber Security Expert, Pune", type: "speaker" as const },
+        { id: 3, name: "Ishan Deshpande", role: "Tech Support Engineer, Mindtickle, Pune", type: "panelist" as const },
+        { id: 4, name: "Nagesh Pai", role: "WordPress Developer, Mumbai", type: "panelist" as const },
+        { id: 5, name: "Prathmesh Palave", role: "Technical Support Lead, CampusPress, Mumbai", type: "panelist" as const },
+    ];
 
     return (
         <section id="sf-speakers" className="sf-speakers" ref={revealRef}>
@@ -414,12 +414,12 @@ function SpeakersSection() {
                             </div>
                             <h3 className="sf-speakers__name">{speaker.name}</h3>
                             <p className="sf-speakers__role">{speaker.role}</p>
+                            <span style={{ fontSize: "0.7rem", textTransform: "uppercase", letterSpacing: "0.08em", color: speaker.type === "speaker" ? "#06d6a0" : "#ec4899", marginTop: "0.5rem", display: "inline-block" }}>
+                                {speaker.type === "speaker" ? "🎤 Speaker" : "💬 Panelist"}
+                            </span>
                         </div>
                     ))}
                 </div>
-                <p className="sf-speakers__note sf-reveal-item" style={{ animationDelay: "0.4s" }}>
-                    🎤 Speaker details will be announced soon. Stay tuned!
-                </p>
             </div>
         </section>
     );
